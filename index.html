@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de DOM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      width: 320px;
+      box-shadow: 0 4px 15px #0001;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      box-sizing: border-box;
+      border-radius: 6px;
+    }
+
+    input {
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #resultado {
+      background: #e0f2fe;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 6px;
+      min-height: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Teste de DOM</h2>
+
+    <input id="campo1" type="text"
+      placeholder="Digite o primeiro valor">
+
+    <input id="campo2" type="text"
+      placeholder="Digite o segundo valor">
+
+    <button onclick="executar()">Executar</button>
+
+    <div id="resultado">
+      Resultado aparecerá aqui.
+    </div>
+  </div>
+
+</body>
+</html>
